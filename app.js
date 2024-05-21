@@ -1,8 +1,11 @@
 require('dotenv').config();
 const express = require('express');
 const connectDB = require('./Config/database');
-const beneficiarioRoutes = require('./Routes/beneficiarioRoutes');
-const ayudanteRoutes = require('./Routes/ayudanteRoutes');
+const beneficiarioRoutes = require('./routes/beneficiarioRoutes');
+const ayudanteRoutes = require('./routes/ayudanteRoutes');
+const donacionRoutes = require('./routes/donacionRoutes');
+const donadorRoutes = require('./routes/donadorRoutes');
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;

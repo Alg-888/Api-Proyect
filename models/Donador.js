@@ -18,6 +18,10 @@ const donadorSchema = new Schema({
   tipoDocumen: {
     type: String,
     required: true
+  },  
+  Documento: {
+    type: String,
+    required: true
   },
   telefono: {
     type: Number
