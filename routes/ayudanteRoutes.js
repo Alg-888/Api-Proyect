@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const ayudanteController = require('../Controllers/ayudanteController');
+const ayudanteController = require('../controllers/ayudanteController');
 
 router.get('/', ayudanteController.obtenerTodosLosAyudantes);
 router.post('/', ayudanteController.crearAyudante);

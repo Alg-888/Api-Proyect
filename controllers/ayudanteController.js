@@ -1,4 +1,4 @@
-const Ayudante = require('../Models/Ayudante');
+const Ayudante = require('../models/Ayudante');
 
 exports.obtenerTodosLosAyudantes = async (req, res) => {
   try {
