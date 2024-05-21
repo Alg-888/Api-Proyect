@@ -5,7 +5,13 @@ const beneficiarioRoutes = require('./routes/beneficiarioRoutes');
 const ayudanteRoutes = require('./routes/ayudanteRoutes');
 const donacionRoutes = require('./routes/donacionRoutes');
 const donadorRoutes = require('./routes/donadorRoutes');
+const cors = require('cors');
 
+
+const cors = require('cors');
+
+app.use(cors());
+app.use(bodyParser.json());
 
 const app = express();
 const PORT = process.env.PORT || 3000;
