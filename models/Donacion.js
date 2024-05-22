@@ -7,7 +7,8 @@ const donacionSchema = new mongoose.Schema({
   },
   tipo: {
     type: String,
-    required: true
+    required: true,
+    enum:['Monetaria','Material']
   },
   donacion: {
     type: String,

@@ -13,11 +13,13 @@ const donadorSchema = new Schema({
   },
   tipoDonador: {
     type: String,
-    required: true
+    required: true,
+    enum:['Empresa','Natural']
   },
   tipoDocumen: {
     type: String,
-    required: true
+    required: true,
+    enum: ['C.C', 'NIT']
   },  
   Documento: {
     type: String,
